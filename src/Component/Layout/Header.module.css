@@ -9,3 +9,30 @@
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
   z-index: 10;
 }
+
+.button {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background-color: #ffff;
+  color: #24272a;
+  padding: 0.75rem 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+.badge {
+  background-color: #113227;
+  padding: 0.20rem .8rem;
+  border-radius: 25px;
+  margin-left: .8rem;
+  font-weight: normal;
+  color: white;
+}
