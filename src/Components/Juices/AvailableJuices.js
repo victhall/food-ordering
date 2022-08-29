@@ -1,4 +1,5 @@
 import classes from './AvailableJuices.module.css'
+import JuiceItem from './JuiceItem/JuiceItem';
 
 const DUMMY_JUICES = [
   {
@@ -39,7 +40,12 @@ const DUMMY_JUICES = [
 ];
 
 export default function AvailableJuices() {
-  const drinksList = DUMMY_JUICES.map(drink => <li>{drink.name}</li>)
+  const drinksList = DUMMY_JUICES.map((juice) => 
+  <JuiceItem
+  key={juice.id} 
+  name={juice.name} 
+  description={juice.description} 
+  price={juice.price}/>)
 
   return <section className={classes.drinks}>
     <ul>
