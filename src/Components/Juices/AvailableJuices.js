@@ -1,3 +1,4 @@
+import classes from './AvailableJuices.module.css'
 
 const DUMMY_JUICES = [
   {
@@ -40,7 +41,7 @@ const DUMMY_JUICES = [
 export default function AvailableJuices() {
   const drinksList = DUMMY_JUICES.map(drink => <li>{drink.name}</li>)
 
-  return <section>
+  return <section className={classes.drinks}>
     <ul>
       {drinksList}
     </ul>

@@ -36,3 +36,16 @@
   font-weight: normal;
   color: white;
 }
+
+.main-image {
+  width: 100%;
+  height: 48rem;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.main-image img {
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,8 +1,16 @@
-import Header from './Component/Layout/Header';
+import { Fragment } from 'react';
+
+import Juices from './Components/Juices/Juices';
+import Header from './Components/Layout/Header';
 
 function App() {
   return (
-    <Header />
+    <Fragment>
+       <Header />
+   <main>
+    <Juices />
+   </main>
+    </Fragment>
   );
 }
 
