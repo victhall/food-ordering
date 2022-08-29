@@ -1,4 +1,5 @@
 import classes from './JuiceItem.module.css'
+import JuiceItemForm from './JuiceItemForm'
 
 export default function JuiceItem(props) {
   const price = `${props.price.toFixed(2)}`
@@ -13,9 +14,9 @@ export default function JuiceItem(props) {
       </div>
 
       <div>
-
+        <JuiceItemForm />
       </div>
-      
+
     </li>
   )
 }
