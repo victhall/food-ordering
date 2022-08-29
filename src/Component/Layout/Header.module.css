@@ -16,7 +16,7 @@
   border: none;
   background-color: #ffff;
   color: #24272a;
-  padding: 0.75rem 3rem;
+  padding: 0.75rem 0rem .75rem 3rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -32,7 +32,7 @@
   background-color: #113227;
   padding: 0.20rem .8rem;
   border-radius: 25px;
-  margin-left: .8rem;
+  margin-left: .5rem;
   font-weight: normal;
   color: white;
 }
