@@ -42,6 +42,7 @@ const DUMMY_JUICES = [
 export default function AvailableJuices() {
   const drinksList = DUMMY_JUICES.map((juice) => 
   <JuiceItem
+  id={juice.id}
   key={juice.id} 
   name={juice.name} 
   description={juice.description} 

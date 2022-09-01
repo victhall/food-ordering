@@ -5,7 +5,7 @@ export default function JuiceItemForm(props) {
 
   return <form className={classes.form}>
     <Input input={{
-      id: 'amount',
+      id: 'amount_' + props.id, // <= creates a unique id 
       type: 'number',
       min: '1',
       max: '20',
