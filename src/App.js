@@ -1,15 +1,19 @@
-import { Fragment } from 'react';
+import { Fragment, useState } from 'react';
 
 import Juices from './Components/Juices/Juices';
 import Header from './Components/Layout/Header';
+import Cart from './Components/Cart/Cart';
 
 function App() {
+ const [cartIsShown, setCartIsShown] useState(false)
+
   return (
     <Fragment>
-       <Header />
-   <main>
-    <Juices />
-   </main>
+      <Cart />
+      <Header />
+      <main>
+        <Juices />
+      </main>
     </Fragment>
   );
 }
