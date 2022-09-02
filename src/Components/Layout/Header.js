@@ -1,7 +1,9 @@
 import { Fragment } from "react";
+
 import classes from '../Layout/Header.module.css';
 import HeaderCartButton from "./HeaderCartButton";
 import PlaceHolderImage from '../../assets/placeholder-image.png'
+
 
 export default function Header(props) {
   return (
