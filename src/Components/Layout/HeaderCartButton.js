@@ -8,7 +8,7 @@ export default function HeaderCartButton(props) {
   const cartCtx = useContext(CartContext);
 
   const numOfCartItems = cartCtx.items.reduce((currNum, item) => {
-    return currNum + item.amount
+    return currNum + item.totalAmount
   }, 0)
 
   return (

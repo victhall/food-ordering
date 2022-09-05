@@ -1,8 +1,22 @@
+import { useContext } from 'react';
+
 import classes from './JuiceItem.module.css'
 import JuiceItemForm from './JuiceItemForm'
+import CartContext from '../../../store/cart-context';
 
 export default function JuiceItem(props) {
+  const cartCtx = useContext(CartContext);
+
   const price = `${props.price.toFixed(2)}`
+
+  const addToCartHandler = (amount) => {
+    cartCtx.addItem({
+      id: props.id,
+      name: props.name,
+      totalAmount: amount,
+      price: props.price
+    });
+  };
 
   return (
     <li className={classes.drink}>
@@ -14,7 +28,7 @@ export default function JuiceItem(props) {
       </div>
 
       <div>
-        <JuiceItemForm />
+        <JuiceItemForm onAddToCart={addToCartHandler} />
       </div>
 
     </li>
